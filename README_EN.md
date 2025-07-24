@@ -105,7 +105,7 @@ Vue 3.5.17 + TypeScript
 ### 1. Clone the Project
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/RowanWang6/hardhat-beibei-coin-tutorialDapp.git
 cd hardhat-project
 ```
 
