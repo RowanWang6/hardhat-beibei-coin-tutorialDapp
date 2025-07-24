@@ -6,35 +6,35 @@
 [![Vue](https://img.shields.io/badge/Frontend-Vue%203-green.svg)](https://vuejs.org/)
 [![Ethers](https://img.shields.io/badge/Web3-Ethers.js%20v6-purple.svg)](https://docs.ethers.org/)
 
-> A fully-featured ERC-20 token DApp with minting, transfer, approval, burning capabilities, supporting both React and Vue frontend versions
+👆 [点击查看中文文档](./README.md)
+
+> A full-featured ERC-20 token DApp with minting, transfer, approval, and burning capabilities, supporting both React and Vue frontend versions
 
 ## 📖 Project Overview
 
-BeiBeiCoin (BBC) is an Ethereum-based ERC-20 token project providing complete smart contracts and modern frontend interfaces. The project includes:
+BeiBeiCoin (BBC) is an Ethereum-based ERC-20 token project that provides complete smart contracts and modern frontend interfaces. The project includes:
 
-- **Smart Contract**: Solidity-based ERC-20 token contract with minting and burning capabilities
+- **Smart Contracts**: Solidity-based ERC-20 token contract with minting and burning capabilities
 - **React Frontend**: Modern Web3 interface built with React 19 + RainbowKit + Wagmi v2
 - **Vue Frontend**: Native Web3 connection interface built with Vue 3 + ethers.js v6
-- **Local Development**: Complete Hardhat development environment setup
+- **Local Development**: Complete Hardhat development environment configuration
 
-<!-- Project Demo Screenshots Placeholder -->
+<!-- Project demo screenshots placeholder -->
+
 ## 🖼️ Project Screenshots
 
-> **Image Placeholders**: Please add the following screenshots here:
-> - `docs/images/react-dashboard.png` - React version main interface
-> - `docs/images/vue-dashboard.png` - Vue version main interface  
-> - `docs/images/token-operations.png` - Token operations interface
-> - `docs/images/wallet-connection.png` - Wallet connection interface
+- Main Dashboard
 
-![React Dashboard](./docs/images/react-dashboard.png)
-*React Version - Modern gradient UI design*
+[![](./docs/images/react-dashboard.png)](https://github.com/your-username/hardhat-project)
 
-![Vue Dashboard](./docs/images/vue-dashboard.png)  
-*Vue Version - Based on ethers.js native connection*
+- Token Operations Interface
+
+[![](./docs/images/token-operations.png)](https://github.com/your-username/hardhat-project)
 
 ## ✨ Key Features
 
-### 🔒 Smart Contract Functions
+### 🔒 Smart Contract Features
+
 - ✅ Standard ERC-20 token implementation
 - ✅ Owner-only token minting
 - ✅ Token burning functionality
@@ -42,6 +42,7 @@ BeiBeiCoin (BBC) is an Ethereum-based ERC-20 token project providing complete sm
 - ✅ Complete event logging
 
 ### 🎨 Frontend Features
+
 - ✅ Dual frontend support (React + Vue)
 - ✅ Modern responsive UI design
 - ✅ Real-time balance updates
@@ -50,6 +51,7 @@ BeiBeiCoin (BBC) is an Ethereum-based ERC-20 token project providing complete sm
 - ✅ Transaction status tracking
 
 ### 🛠️ Development Tools
+
 - ✅ Hardhat local development network
 - ✅ Automated test suite
 - ✅ Contract deployment scripts
@@ -59,16 +61,18 @@ BeiBeiCoin (BBC) is an Ethereum-based ERC-20 token project providing complete sm
 ## 🏗️ Technical Architecture
 
 ### Smart Contract Layer
+
 ```
 MyToken.sol (ERC-20)
-├── Minting function (owner only)
-├── Transfer function
+├── Minting functionality (owner only)
+├── Transfer functionality
 ├── Approval mechanism
-├── Burning function
+├── Burning functionality
 └── Balance queries
 ```
 
-### React Frontend Tech Stack
+### React Stack
+
 ```
 React 19 + TypeScript
 ├── RainbowKit (wallet connection)
@@ -79,7 +83,8 @@ React 19 + TypeScript
 └── Lucide React (icons)
 ```
 
-### Vue Frontend Tech Stack  
+### Vue Stack
+
 ```
 Vue 3.5.17 + TypeScript
 ├── ethers.js v6.15.0 (Web3 library)
@@ -91,11 +96,11 @@ Vue 3.5.17 + TypeScript
 
 ## 🚀 Quick Start
 
-### Requirements
+### Prerequisites
 
 - Node.js >= 18.0.0
 - npm >= 8.0.0
-- MetaMask browser extension
+- MetaMask wallet extension
 
 ### 1. Clone the Project
 
@@ -115,7 +120,7 @@ cd frontend-react
 npm install
 cd ..
 
-# Install Vue frontend dependencies  
+# Install Vue frontend dependencies
 cd frontend-vue
 npm install
 cd ..
@@ -138,6 +143,7 @@ npx hardhat run scripts/fixed-addr-deploy-and-test.js --network localhost
 ### 5. Configure MetaMask
 
 1. Add local network:
+
    - Network Name: `Hardhat Local`
    - RPC URL: `http://127.0.0.1:8545`
    - Chain ID: `31337`
@@ -145,9 +151,9 @@ npx hardhat run scripts/fixed-addr-deploy-and-test.js --network localhost
 
 2. Import test accounts (see `ACCOUNTS.md` for private keys)
 
-### 6. Start Frontend Applications
+### 6. Start Frontend Application
 
-#### React Version (Recommended for Modern Experience)
+#### React Version
 
 ```bash
 cd frontend-react
@@ -157,24 +163,26 @@ npm run dev
 Visit: http://localhost:5173
 
 **React Version Features:**
+
 - 🎨 Modern UI design
 - 🔗 RainbowKit wallet connection
 - ⚡ Wagmi v2 high-performance Hooks
 - 🔄 Real-time data synchronization
 - 📱 Perfect responsive design
 
-#### Vue Version (Native ethers.js Experience)
+#### Vue Version
 
 ```bash
-cd frontend-vue  
+cd frontend-vue
 npm run dev
 ```
 
 Visit: http://localhost:5174
 
 **Vue Version Features:**
+
 - 🛠️ Native ethers.js v6 integration
-- 🔧 BrowserProvider direct connection
+- 🔧 Direct BrowserProvider connection
 - 🐛 Debugged and fixed stable version
 - 💡 Composition API state management
 - 🎯 Focus on core Web3 functionality
@@ -184,40 +192,45 @@ Visit: http://localhost:5174
 ### Connect Wallet
 
 1. Click "Connect Wallet" button
-2. Select MetaMask 
+2. Select MetaMask
 3. Confirm connection and switch to Hardhat local network
 
 ### Token Operations
 
 #### 🪙 Mint Tokens (Contract Owner Only)
+
 1. Enter recipient address
-2. Enter minting amount
+2. Enter mint amount
 3. Click "Mint Tokens"
 4. Confirm transaction in MetaMask
 
 #### 💸 Transfer Tokens
+
 1. Enter recipient address
-2. Enter transfer amount  
+2. Enter transfer amount
 3. Click "Transfer"
 4. Confirm transaction
 
 #### 🛡️ Approve Tokens
+
 1. Enter spender address
 2. Enter approval amount
 3. Click "Approve"
 4. Confirm transaction
 
 #### 🔥 Burn Tokens
+
 1. Enter burn amount
-2. Click "Burn Tokens"  
+2. Click "Burn Tokens"
 3. Confirm transaction
 
 #### 🔍 Query Balance
+
 1. Enter address to query
 2. Click "Query Balance"
 3. View results
 
-## 🧪 Testing and Development
+## 🧪 Testing & Development
 
 ### Run Tests
 
@@ -231,24 +244,14 @@ npx hardhat test test/MyTokenTest.js
 
 ### Redeploy Contract
 
+Note: This project's frontend requires a fixed contract address. It's recommended to use the `fixed-addr-deploy-and-test.js` script to avoid having to modify the frontend connection address. Before redeploying the contract, stop the hardhat node first.
+
 ```bash
-# Fixed contract address deployment (recommended)
+# Deploy with fixed contract address (recommended)
 npx hardhat run scripts/fixed-addr-deploy-and-test.js --network localhost
 
 # Standard deployment
 npx hardhat run scripts/deploy.js --network localhost
-```
-
-### Build Production Version
-
-```bash
-# React version
-cd frontend-react
-npm run build
-
-# Vue version  
-cd frontend-vue
-npm run build
 ```
 
 ## 📁 Project Structure
@@ -268,7 +271,7 @@ hardhat-project/
 │   │   ├── config/           # Wagmi configuration
 │   │   └── ...
 │   └── package.json
-├── frontend-vue/              # Vue frontend  
+├── frontend-vue/              # Vue frontend
 │   ├── src/
 │   │   ├── components/        # Vue components
 │   │   ├── composables/       # Vue Composables
@@ -287,32 +290,35 @@ hardhat-project/
 ### Common Issues
 
 #### 1. MetaMask Connection Failed
+
 ```bash
 # Solutions
 1. Ensure MetaMask is installed and unlocked
 2. Check network configuration is correct (localhost:8545, Chain ID: 31337)
-3. Clear MetaMask cache and reconnect
+3. Clear MetaMask cache and reconnect (restart browser, force cache clear seems ineffective)
 ```
 
 #### 2. Contract Interaction Failed
+
 ```bash
-# Solutions  
+# Solutions
 1. Confirm Hardhat network is running
-2. Check if contract is properly deployed
+2. Check contract is properly deployed
 3. Verify account has enough ETH to pay gas fees
 ```
 
 #### 3. Vue Version ethers.js Issues
+
 ```bash
 # Fixed Issues
 1. ❌ Cannot read private member #notReady
    ✅ Use BrowserProvider instead of provider.ready
 
-2. ❌ Contract function call failed  
+2. ❌ Contract function call failed
    ✅ Use standard ERC20 function names (balanceOf, totalSupply)
 ```
 
-See detailed troubleshooting guide at [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
+For detailed troubleshooting guide, see [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
 
 ## 🔧 Configuration
 
@@ -320,7 +326,7 @@ See detailed troubleshooting guide at [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
 
 - **Contract Address**: `0x1aAc96892d60dC46F27a9F5129D4BF0b2e093a67` (fixed address)
 - **Token Name**: `BeiBeiCoin`
-- **Token Symbol**: `BBC`  
+- **Token Symbol**: `BBC`
 - **Decimals**: `18`
 - **Network**: Hardhat Local (Chain ID: 31337)
 
@@ -344,7 +350,7 @@ networks: {
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Create Pull Request
 
-### Development Guidelines
+### Development Standards
 
 - Use TypeScript for type-safe development
 - Follow ESLint code standards
@@ -353,7 +359,7 @@ networks: {
 
 ## 📄 License
 
-This project is open sourced under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is open source under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## 🙏 Acknowledgments
 
@@ -370,7 +376,7 @@ This project is open sourced under the MIT License - see the [LICENSE](LICENSE) 
 For questions or suggestions, please:
 
 1. Submit an [Issue](../../issues)
-2. Start a [Discussion](../../discussions)  
+2. Start a [Discussion](../../discussions)
 3. Create a [Pull Request](../../pulls)
 
 ---
@@ -378,7 +384,3 @@ For questions or suggestions, please:
 **⭐ If this project helps you, please give it a Star!**
 
 ---
-
-## 📖 中文版本
-
-👆 [点击这里查看中文文档](./README.md)
